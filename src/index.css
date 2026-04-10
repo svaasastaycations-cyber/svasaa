@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&family=Raleway:wght@300;400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-svaasa-black: #0B0B0D;
+  --color-svaasa-card: #16161A;
+  --color-svaasa-white: #FFFFFF;
+  --color-svaasa-gray: #C7C9CC;
+  --color-svaasa-brand: #B2E48A;
+
+  --font-serif: "Montserrat", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-header: "Raleway", sans-serif;
+  --font-script: "Dancing Script", cursive;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-header);
+    line-height: 1.5;
+    font-weight: 500;
+    color-scheme: dark;
+    color: var(--color-svaasa-white);
+    background-color: var(--color-svaasa-black);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen bg-svaasa-black text-svaasa-white font-header;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-header font-black;
+  }
+
+  /* Custom scrollbar utilities */
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .scrollbar-track-transparent::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thumb-white\/30::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 20px;
+  }
+  /* Firefox */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
