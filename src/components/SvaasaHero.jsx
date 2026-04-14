@@ -57,10 +57,10 @@ const SvaasaHero = () => {
   const renderCaption = (caption, highlight) => {
     if (!highlight) return caption;
     const parts = caption.split(new RegExp(`(${highlight})`, 'gi'));
-    return parts.map((part, i) => 
-      part.toLowerCase() === highlight.toLowerCase() ? 
-      <span key={i} className="text-svaasa-brand italic">{part}</span> : 
-      part
+    return parts.map((part, i) =>
+      part.toLowerCase() === highlight.toLowerCase() ?
+        <span key={i} className="text-svaasa-brand italic">{part}</span> :
+        part
     );
   };
 
@@ -80,15 +80,15 @@ const SvaasaHero = () => {
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx} className="w-full h-full relative">
             <div className="absolute inset-0 bg-black/40 z-10" />
-            <img 
-              src={slide.image} 
+            <img
+              src={slide.image}
               alt={slide.caption}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6 mt-16 md:mt-24">
-              <h1 className="text-4xl md:text-7xl lg:text-9xl font-header font-black text-white max-w-sm md:max-w-6xl leading-tight md:leading-[1.1] drop-shadow-2xl">
+              <h2 className="text-4xl md:text-7xl lg:text-9xl font-header font-black text-white max-w-sm md:max-w-6xl leading-tight md:leading-[1.1] drop-shadow-2xl">
                 {renderCaption(slide.caption, slide.highlight)}
-              </h1>
+              </h2>
               <p className="mt-8 text-base md:text-2xl font-header font-bold tracking-wide text-white/90 max-w-4xl mx-auto italic drop-shadow-lg">
                 {slide.subcaption}
               </p>
