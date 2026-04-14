@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://svaasastaycations.com/sitemap.xml
