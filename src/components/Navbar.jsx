@@ -30,9 +30,8 @@ const Navbar = () => {
       {/* TOP NAVBAR */}
       {/* TOP NAVBAR (Floating Glass Bar) */}
       <nav
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${
-          isScrolled ? "h-20 md:h-28 bg-svaasa-black/40 backdrop-blur-2xl border-b border-white/10 shadow-2xl" : "h-24 md:h-32 bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${isScrolled ? "h-20 md:h-28 bg-svaasa-black/40 backdrop-blur-2xl border-b border-white/10 shadow-2xl" : "h-24 md:h-32 bg-transparent"
+          }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between h-full w-full">
 
@@ -81,11 +80,10 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className={`relative h-full bg-svaasa-card/95 backdrop-blur-3xl shadow-2xl flex flex-col px-8 md:px-12 py-10 overflow-hidden transition-[width] duration-300 ease-in-out border-r border-white/5 ${
-                activeSubMenu ? "w-full md:w-[600px]" : "w-full md:w-[400px]"
-              }`}
+              className={`relative h-full bg-svaasa-card/95 backdrop-blur-3xl shadow-2xl flex flex-col px-8 md:px-12 py-10 overflow-hidden transition-[width] duration-300 ease-in-out border-r border-white/5 ${activeSubMenu ? "w-full md:w-[600px]" : "w-full md:w-[400px]"
+                }`}
             >
-              
+
               {/* TOP BAR: Close Button */}
               <div className="flex justify-end items-start w-full">
                 <button
@@ -107,7 +105,7 @@ const Navbar = () => {
                   className="flex w-[200%] md:w-full h-full"
                 >
                   {/* LEFT COLUMN: Main Nav */}
-                  <div className="flex flex-col space-y-6 md:space-y-8 w-1/2 md:w-[300px] shrink-0 z-10 px-0 md:px-4">
+                  <div className="flex overflow-y-scroll scroll-smooth no-scrollbar flex-col space-y-6 md:space-y-8 w-1/2 md:w-[300px] shrink-0 z-10 px-0 md:px-4">
                     <Link
                       to="/"
                       className="flex justify-start mb-4"
