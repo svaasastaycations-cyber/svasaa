@@ -27,7 +27,7 @@ const ContactUs = () => {
             </h2>
           </div>
 
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Contact Methods */}
             <div className="space-y-10 lg:space-y-12">
               <h3 className="text-xl md:text-2xl font-header font-black text-white mb-6 md:mb-8 border-b border-white/20 pb-4 inline-block tracking-widest">
@@ -103,6 +103,26 @@ const ContactUs = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Map */}
+            <div className="space-y-10 lg:space-y-12 h-full">
+              <h3 className="text-xl md:text-2xl font-header font-black text-white mb-6 md:mb-8 border-b border-white/20 pb-4 inline-block tracking-widest">
+                Location Map
+              </h3>
+
+              <div className="bg-svaasa-card p-2 md:p-4 rounded-3xl shadow-xl border border-white/10 h-[400px] md:h-[500px] w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.926818364583!2d78.26701317376947!3d17.367254103387555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbeb0077d97fbb%3A0x828478d1c2c53da!2sLotus%20Bliss%20Farm%20Stay-%20By%20Svaasa%20Stacations!5e0!3m2!1sen!2sin!4v1776237548898!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-2xl md:rounded-[1.2rem] w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>
