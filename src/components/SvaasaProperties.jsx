@@ -13,6 +13,7 @@ const SvaasaProperties = () => {
     {
       id: "old-town",
       name: "The Old Town",
+      alt: "Best Farm House in Hyderabad With Swimming Pool",
       image: oldTownImg,
       lines: [
         { icon: <MapPin size={18} />, text: "Just 25 mins from ORR" },
@@ -24,6 +25,7 @@ const SvaasaProperties = () => {
     {
       id: "lotus-bliss",
       name: "The Lotus Bliss",
+      alt: "Green Meadows Farm House Hyderabad",
       image: lotusBlissImg,
       lines: [
         { icon: <MapPin size={18} />, text: "Just 15 mins from ORR" },
@@ -56,7 +58,7 @@ const SvaasaProperties = () => {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={prop.image}
-                  alt={prop.name}
+                  alt={prop.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />

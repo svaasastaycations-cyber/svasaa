@@ -12,15 +12,18 @@ const IntimateMoments = () => {
   const events = [
     {
       title: "Weddings",
-      image: weddingImg
+      image: weddingImg,
+      altTag: "Farm House for Wedding in Hyderabad",
     },
     {
       title: "Birthdays",
-      image: birthdayImg
+      image: birthdayImg,
+      altTag: "Farm House for Birthday in Hyderabad",
     },
     {
       title: "Haldi & Mehendi",
-      image: haldiImg
+      image: haldiImg,
+      altTag: "Farm House for Haldi & Mehendi in Hyderabad",
     }
   ];
 
@@ -29,11 +32,11 @@ const IntimateMoments = () => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h3 className="text-4xl md:text-5xl lg:text-7xl font-header font-black tracking-wider text-svaasa-brand mb-6 leading-tight">
-            More Than a Staycation, <br/>
-            <span className="text-white block mt-4 italic-none not-italic">Celebrate Life’s Best Moments</span> 
+            More Than a Staycation, <br />
+            <span className="text-white block mt-4 italic-none not-italic">Celebrate Life’s Best Moments</span>
           </h3>
           <p className="text-lg md:text-xl text-svaasa-gray font-header font-light tracking-wide">
-             Surrounded by Nature, Crafted for Memories
+            Surrounded by Nature, Crafted for Memories
           </p>
         </div>
 
@@ -41,14 +44,14 @@ const IntimateMoments = () => {
           {events.map((event, idx) => (
             <div key={idx} className="group relative overflow-hidden rounded-3xl shadow-xl">
               <div className="aspect-[3/4] overflow-hidden">
-                <img 
-                  src={event.image} 
-                  alt={event.title} 
+                <img
+                  src={event.image}
+                  alt={event.altTag}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[20%] group-hover:grayscale-0"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent group-hover:from-white/10 transition-colors duration-500" />
-              
+
               <div className="absolute bottom-0 left-0 right-0 p-8 flex items-center justify-between">
                 <h3 className="font-header font-black text-2xl tracking-widest text-white transform group-hover:-translate-y-2 transition-transform duration-300">
                   {event.title}
@@ -60,9 +63,9 @@ const IntimateMoments = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-20 text-center">
-          <button 
+          <button
             onClick={() => navigate('/events')}
             className="px-8 py-4 bg-svaasa-brand text-svaasa-black tracking-widest text-sm font-black rounded-full hover:bg-white transition-colors shadow-lg"
           >

@@ -14,11 +14,11 @@ import lb3 from "../assets/lotusbliss/DJI_0095-5.jpg";
 
 const HomeGallery = () => {
   const images = [
-    { src: lb1, alt: "Svaasa Lotus Bliss", title: "Lotus Bliss" },
-    { src: ot2, alt: "Svaasa Old Town Interior", title: "Interiors" },
-    { src: lb2, alt: "Svaasa Lotus Bliss Exterior", title: "Poolside" },
-    { src: ot3, alt: "Svaasa Old Town Garden", title: "Gardens" },
-    { src: lb3, alt: "Svaasa Lotus Bliss Sunset", title: "Sunset Views" },
+    { src: lb1, alt: "Svaasa Lotus Bliss", altTag: "Farm House for One Day Rent in Hyderabad", title: "Lotus Bliss" },
+    { src: ot2, alt: "Svaasa Old Town Interior", altTag: "Near Me Farmhouse", title: "Interiors" },
+    { src: lb2, alt: "Svaasa Lotus Bliss Exterior", altTag: "Farmhouse Greens", title: "Poolside" },
+    { src: ot3, alt: "Svaasa Old Town Garden", altTag: "Farm House Near Hyderabad", title: "Gardens" },
+    { src: lb3, alt: "Svaasa Lotus Bliss Sunset", altTag: "Farm House For Rent in Hyderabad", title: "Sunset Views" },
   ];
 
   const scrollContainerRef = React.useRef(null);
@@ -96,7 +96,7 @@ const HomeGallery = () => {
               >
                 <img
                   src={img.src}
-                  alt={img.alt}
+                  alt={img.altTag}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">

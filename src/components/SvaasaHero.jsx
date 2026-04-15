@@ -18,37 +18,37 @@ const SvaasaHero = () => {
   const slides = [
     {
       image: mainHero,
-      caption: "Hyderabad’s Favourite Staycations",
+      caption: "Farm House Near Me",
       subcaption: "Handpicked stays designed for comfort, privacy, and unforgettable moments",
       highlight: "Staycations"
     },
     {
       image: cricketHero,
-      caption: "Box Cricket. Snookers. Vibes",
+      caption: "Farm House for Rent in Hyderabad",
       subcaption: "Play, unwind, and soak in the perfect blend of fun and relaxation",
       highlight: "Vibes"
     },
     {
       image: poolHero,
-      caption: "Dive into Paradise",
+      caption: "Farmhouse with Swimming Pool for Rent in Hyderabad",
       subcaption: "Refresh, relax, and indulge in your own private poolside escape",
       highlight: "Paradise"
     },
     {
       image: coupleHero,
-      caption: "Couple-Crafted Luxury Stays",
+      caption: "Private Farm House for Rent in Hyderabad",
       subcaption: "Intimate spaces thoughtfully designed for meaningful moments together",
       highlight: "Luxury Stays"
     },
     {
       image: petsHero,
-      caption: "Get Your Pets Along",
+      caption: "Famous Farm House in Hyderabad",
       subcaption: "Because your perfect getaway isn’t complete without them",
       highlight: "Pets Along"
     },
     {
       image: bonfireHero,
-      caption: "Cozy by the Bonfire",
+      caption: "Farm House for Party in Hyderabad",
       subcaption: "Warm nights, good conversations, and memories that linger longer",
       highlight: "Bonfire"
     }
