@@ -89,7 +89,7 @@ const OldTown = () => {
         <section className="w-full h-[60vh] md:h-[80vh] relative">
           <img
             src={oldTownHero}
-            alt="The Old Town"
+            alt="The Old Town Farm House Hyderabad"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40 z-10" />
@@ -329,14 +329,18 @@ const OldTown = () => {
                 onScroll={handleScroll}
                 className="flex overflow-x-scroll pb-4 gap-6 scrollbar-hide snap-x snap-mandatory"
               >
-                {[ot1, ot2, ot3].map((img, index) => (
+                {[
+                  { image: ot1, altTag: "Heritage entry gate of The Old Town Farm House Hyderabad" },
+                  { image: ot2, altTag: "Farm house for rent in Hyderabad with traditional architecture" },
+                  { image: ot3, altTag: "Luxury farmhouse in Hyderabad ideal for peaceful stay" }
+                ].map((item, index) => (
                   <div
                     key={index}
                     className="min-w-[85vw] md:min-w-[500px] aspect-[4/3] overflow-hidden rounded-[2rem] snap-center border border-white/10 shadow-2xl"
                   >
                     <img
-                      src={img}
-                      alt={`Old Town ${index + 1}`}
+                      src={item.image}
+                      alt={item.altTag}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                     />
                   </div>

@@ -16,18 +16,21 @@ const EventSpace = () => {
       desc: "Exchange vows in front of a serene backdrop. Our premium farmstays provide the perfect elegant setting for your closest friends and family to celebrate your union in style and absolute privacy.",
       image: weddingImg,
       icon: <Camera size={28} />,
+      altTag: "Farm house for wedding in Hyderabad with pool and open space",
     },
     {
       title: "Haldi & Mehendi",
       desc: "Bright, colorful, and joyful. Our expansive lawns and poolside areas offer the most photogenic and traditional yet modern aesthetics for your pre-wedding festivities.",
       image: haldiImg,
       icon: <Sparkles size={28} />,
+      altTag: "Farm house for haldi and mehendi in Hyderabad with pool and open space",
     },
     {
       title: "Sophisticated Birthdays",
       desc: "Whether it’s a sweet 16 or a phenomenal 50th, celebrate your milestones with unmatched hospitality, spectacular lighting, and a vibe that your guests will talk about for years.",
       image: birthdayImg,
       icon: <Music size={28} />,
+      altTag: "Farm house for birthday in Hyderabad with pool and open space",
     },
   ];
 
@@ -66,7 +69,7 @@ const EventSpace = () => {
                   <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/20 transition-colors duration-500">
                     <img
                       src={event.image}
-                      alt={event.title}
+                      alt={event.altTag}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 grayscale-[10%] group-hover:grayscale-0"
                     />
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />

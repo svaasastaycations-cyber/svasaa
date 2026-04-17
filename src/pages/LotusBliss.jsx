@@ -331,14 +331,18 @@ const LotusBliss = () => {
                 onScroll={handleScroll}
                 className="flex overflow-x-scroll pb-4 gap-6 scrollbar-hide snap-x snap-mandatory"
               >
-                {[lb1, lb2, lb3].map((img, index) => (
+                {[
+                  { image: lb1, altTag: "Aerial view of Lotus Bliss farm house Hyderabad with swimming pool" },
+                  { image: lb2, altTag: "Luxury farmhouse in Hyderabad with pool and garden view" },
+                  { image: lb3, altTag: "Farmhouse with swimming pool for rent in Hyderabad" }
+                ].map((item, index) => (
                   <div
                     key={index}
                     className="min-w-[85vw] md:min-w-[500px] aspect-[4/3] overflow-hidden rounded-[2rem] snap-center border border-white/10 shadow-2xl"
                   >
                     <img
-                      src={img}
-                      alt={`Lotus Bliss ${index + 1}`}
+                      src={item.image}
+                      alt={item.altTag}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
                     />
                   </div>
