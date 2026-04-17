@@ -91,7 +91,7 @@ const LotusBliss = () => {
         <section className="w-full h-[60vh] md:h-[80vh] relative">
           <img
             src={lotusHero}
-            alt="The Lotus Bliss"
+            alt="The Lotus Bliss Farm House Hyderabad"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40 z-10" />
