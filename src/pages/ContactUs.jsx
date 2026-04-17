@@ -88,41 +88,76 @@ const ContactUs = () => {
                   </div>
                 </a>
 
-                <div className="flex items-start space-x-4 md:space-x-6 group pt-6 border-t border-white/10">
-                  <div className="w-12 h-12 md:w-14 md:h-14 shrink-0 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white group-hover:bg-white group-hover:text-svaasa-black transition-all duration-300">
-                    <MapPin size={20} />
+                <div className="space-y-6 pt-6 border-t border-white/10">
+                  <div className="flex items-start space-x-4 md:space-x-6 group">
+                    <div className="w-12 h-12 md:w-14 md:h-14 shrink-0 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white group-hover:bg-white group-hover:text-svaasa-black transition-all duration-300">
+                      <MapPin size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-[10px] md:text-sm tracking-widest text-svaasa-brand font-black font-header uppercase mb-1">
+                        The Lotus Bliss
+                      </h4>
+                      <p className="text-white font-medium text-base md:text-lg leading-relaxed">
+                        Chilkur, Hyderabad-501504
+                      </p>
+                    </div>
                   </div>
-                  <div className="mt-1">
-                    <h4 className="text-[10px] md:text-sm tracking-widest text-white/40 font-black font-header">
-                      Location
-                    </h4>
-                    <p className="text-white font-medium text-base md:text-lg mt-1 leading-relaxed">
-                      Lotusbliss Farmstay, Chilkur,
-                      <br />
-                      Hyderabad-501504
-                    </p>
+
+                  <div className="flex items-start space-x-4 md:space-x-6 group pt-4">
+                    <div className="w-12 h-12 md:w-14 md:h-14 shrink-0 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white group-hover:bg-white group-hover:text-svaasa-black transition-all duration-300">
+                      <MapPin size={20} />
+                    </div>
+                    <div>
+                      <h4 className="text-[10px] md:text-sm tracking-widest text-svaasa-brand font-black font-header uppercase mb-1">
+                        The Old Town
+                      </h4>
+                      <p className="text-white font-medium text-base md:text-lg leading-relaxed">
+                        Chilkur Village, Moinabad, Hyderabad-501504
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Map */}
-            <div className="space-y-10 lg:space-y-12 h-full">
-              <h3 className="text-xl md:text-2xl font-header font-black text-white mb-6 md:mb-8 border-b border-white/20 pb-4 inline-block tracking-widest">
-                Location Map
-              </h3>
+            {/* Maps */}
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-xl md:text-2xl font-header font-black text-white mb-6 border-b border-white/20 pb-4 inline-block tracking-widest uppercase">
+                  Lotus Bliss Map
+                </h3>
+                <div className="bg-svaasa-card p-2 md:p-4 rounded-3xl shadow-xl border border-white/10 h-[300px] md:h-[400px] w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.9269244428897!2d78.26958809999999!3d17.367248999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbeb0077d97fbb%3A0x828478d1c2c53da!2sLotus%20Bliss%20Farm%20Stay-%20By%20Svaasa%20Stacations!5e0!3m2!1sen!2sin!4v1776427158808!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lotus Bliss Location"
+                    className="rounded-2xl md:rounded-[1.2rem] w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
 
-              <div className="bg-svaasa-card p-2 md:p-4 rounded-3xl shadow-xl border border-white/10 h-[400px] md:h-[500px] w-full">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.926818364583!2d78.26701317376947!3d17.367254103387555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbeb0077d97fbb%3A0x828478d1c2c53da!2sLotus%20Bliss%20Farm%20Stay-%20By%20Svaasa%20Stacations!5e0!3m2!1sen!2sin!4v1776237548898!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-2xl md:rounded-[1.2rem] w-full h-full"
-                ></iframe>
+              <div>
+                <h3 className="text-xl md:text-2xl font-header font-black text-white mb-6 border-b border-white/20 pb-4 inline-block tracking-widest uppercase">
+                  Old Town Map
+                </h3>
+                <div className="bg-svaasa-card p-2 md:p-4 rounded-3xl shadow-xl border border-white/10 h-[300px] md:h-[400px] w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.3437367246416!2d78.1991960898052!3d17.381361106336453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe9896b53657b%3A0xe498a277a63073c5!2sThe%20OLD%20TOWN%20Eventspace%20%26%20Farmstay!5e0!3m2!1sen!2sin!4v1776427133550!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Old Town Location"
+                    className="rounded-2xl md:rounded-[1.2rem] w-full h-full"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
