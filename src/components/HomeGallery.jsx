@@ -5,20 +5,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Note: In a real Vite project, we might use a dynamic import or glob pattern
 // but for this preview, we'll manually import a few representive images.
-import ot1 from "../assets/oldtown/NVN_6141.jpg";
-import ot2 from "../assets/oldtown/NVN_6145.jpg";
-import ot3 from "../assets/oldtown/NVN_6148.jpg";
+// Old Town Images
+import ot1 from "../assets/oldtown/NVN_6301.jpeg";
+import ot2 from "../assets/oldtown/NVN_6541.jpeg";
+import ot3 from "../assets/oldtown/26DF0AB6-ED9C-436F-BB53-343EDD3E4A9B.png";
+import ot4 from "../assets/oldtown/2BC115F2-B6B3-4AB7-895B-E5E3A084A239.png";
+import ot5 from "../assets/oldtown/2D1AAF70-42AB-41D7-965F-04AB253313AA.png";
+
+// Lotus Bliss Images
 import lb1 from "../assets/lotusbliss/DJI_0030-3.jpg";
 import lb2 from "../assets/lotusbliss/DJI_0082-4.jpg";
 import lb3 from "../assets/lotusbliss/DJI_0095-5.jpg";
+import lb4 from "../assets/lotusbliss/IMG_1020.jpg";
+import lb5 from "../assets/lotusbliss/IMG_1022 2.jpg";
 
 const HomeGallery = () => {
   const images = [
     { src: lb1, alt: "Svaasa Lotus Bliss", altTag: "Farm House for One Day Rent in Hyderabad", title: "Lotus Bliss" },
-    { src: ot2, alt: "Svaasa Old Town Interior", altTag: "Near Me Farmhouse", title: "Interiors" },
+    { src: ot1, alt: "Svaasa Old Town Exterior", altTag: "Old Town Exterior", title: "The Old Town" },
     { src: lb2, alt: "Svaasa Lotus Bliss Exterior", altTag: "Farmhouse Greens", title: "Poolside" },
-    { src: ot3, alt: "Svaasa Old Town Garden", altTag: "Farm House Near Hyderabad", title: "Gardens" },
+    { src: ot2, alt: "Svaasa Old Town Interior", altTag: "Near Me Farmhouse", title: "Interiors" },
     { src: lb3, alt: "Svaasa Lotus Bliss Sunset", altTag: "Farm House For Rent in Hyderabad", title: "Sunset Views" },
+    { src: ot3, alt: "Svaasa Old Town Garden", altTag: "Farm House Near Hyderabad", title: "Gardens" },
+    { src: lb4, alt: "Svaasa Lotus Bliss Evening", altTag: "Premium Farm Stay", title: "Evening Bliss" },
+    { src: ot4, alt: "Svaasa Old Town Pool", altTag: "Farmhouse with Pool", title: "Pool Area" },
+    { src: lb5, alt: "Svaasa Lotus Bliss Rooms", altTag: "Luxury Stay", title: "Luxury Rooms" },
+    { src: ot5, alt: "Svaasa Old Town Night", altTag: "Farmhouse events", title: "Night View" },
   ];
 
   const scrollContainerRef = React.useRef(null);

@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet";
 
 // Vite glob imports for the gallery images
-const oldTownImages = import.meta.glob("../assets/oldtown/*.{jpg,png,jpeg}", {
+const oldTownImages = import.meta.glob("../assets/oldtown/*.{jpg,png,jpeg,JPG,PNG,JPEG,webp}", {
   eager: true,
 });
 const lotusBlissImages = import.meta.glob(
-  "../assets/lotusbliss/*.{jpg,png,jpeg}",
+  "../assets/lotusbliss/*.{jpg,png,jpeg,JPG,PNG,JPEG,webp}",
   { eager: true },
 );
 

@@ -21,9 +21,14 @@ import { useNavigate } from "react-router-dom";
 import TermsAndConditions from "../components/TermsAndConditions";
 import BookingModal from "../components/BookingModal";
 import oldTownHero from "../assets/oldtown.jpg";
-import ot1 from "../assets/oldtown/NVN_6141.jpg";
-import ot2 from "../assets/oldtown/NVN_6145.jpg";
-import ot3 from "../assets/oldtown/NVN_6148.jpg";
+import ot1 from "../assets/oldtown/26DF0AB6-ED9C-436F-BB53-343EDD3E4A9B.png";
+import ot2 from "../assets/oldtown/2BC115F2-B6B3-4AB7-895B-E5E3A084A239.png";
+import ot3 from "../assets/oldtown/2D1AAF70-42AB-41D7-965F-04AB253313AA.png";
+import ot4 from "../assets/oldtown/47F33A41-61D3-4258-A741-1B1CB713BCF3.png";
+import ot5 from "../assets/oldtown/4CF2C3BF-640F-475D-8BBD-8012CD384351.png";
+import ot6 from "../assets/oldtown/60AB3A65-DBC4-427F-9FF0-2653356654E7.png";
+import ot7 from "../assets/oldtown/NVN_6301.jpeg";
+import ot8 from "../assets/oldtown/NVN_6541.jpeg";
 import { Helmet } from "react-helmet";
 
 const OldTown = () => {
@@ -332,7 +337,12 @@ const OldTown = () => {
                 {[
                   { image: ot1, altTag: "Heritage entry gate of The Old Town Farm House Hyderabad" },
                   { image: ot2, altTag: "Farm house for rent in Hyderabad with traditional architecture" },
-                  { image: ot3, altTag: "Luxury farmhouse in Hyderabad ideal for peaceful stay" }
+                  { image: ot3, altTag: "Luxury farmhouse in Hyderabad ideal for peaceful stay" },
+                  { image: ot4, altTag: "The Old Town Farm House pool area" },
+                  { image: ot5, altTag: "The Old Town Farm House evening vibe" },
+                  { image: ot6, altTag: "The Old Town luxury bedrooms" },
+                  { image: ot7, altTag: "The Old Town spacious event lawn" },
+                  { image: ot8, altTag: "The Old Town beautiful interiors" }
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -358,13 +368,13 @@ const OldTown = () => {
                 </button>
 
                 <div className="flex-1 mx-6 h-[3px] bg-white/30 relative rounded-full overflow-hidden">
-                  <div
-                    className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
-                    style={{
-                      width: `${Math.max(20, 100 / 3)}%`,
-                      left: `${scrollProgress * (2 / 3)}%`,
-                    }}
-                  />
+                    <div
+                      className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
+                      style={{
+                        width: `${Math.max(20, 100 / 8)}%`,
+                        left: `${scrollProgress * (7 / 8)}%`,
+                      }}
+                    />
                 </div>
 
                 <button

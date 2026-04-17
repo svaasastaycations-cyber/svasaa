@@ -26,6 +26,13 @@ import lotusHero from "../assets/lotus.jpg";
 import lb1 from "../assets/lotusbliss/DJI_0030-3.jpg";
 import lb2 from "../assets/lotusbliss/DJI_0082-4.jpg";
 import lb3 from "../assets/lotusbliss/DJI_0095-5.jpg";
+import lb4 from "../assets/lotusbliss/IMG_1020.jpg";
+import lb5 from "../assets/lotusbliss/IMG_1022 2.jpg";
+import lb6 from "../assets/lotusbliss/IMG_1027 2.jpg";
+import lb7 from "../assets/lotusbliss/KKK_1267-12.jpg";
+import lb8 from "../assets/lotusbliss/KKK_1279-16.jpg";
+import lb9 from "../assets/lotusbliss/KKK_1384-44.jpg";
+import lb10 from "../assets/lotusbliss/KKK_1453-56 (1).jpg";
 import { Helmet } from "react-helmet";
 
 const LotusBliss = () => {
@@ -334,7 +341,14 @@ const LotusBliss = () => {
                 {[
                   { image: lb1, altTag: "Aerial view of Lotus Bliss farm house Hyderabad with swimming pool" },
                   { image: lb2, altTag: "Luxury farmhouse in Hyderabad with pool and garden view" },
-                  { image: lb3, altTag: "Farmhouse with swimming pool for rent in Hyderabad" }
+                  { image: lb3, altTag: "Farmhouse with swimming pool for rent in Hyderabad" },
+                  { image: lb4, altTag: "Lotus Bliss farmhouse exteriors" },
+                  { image: lb5, altTag: "Lotus Bliss farmhouse interiors" },
+                  { image: lb6, altTag: "Lotus Bliss luxury rooms" },
+                  { image: lb7, altTag: "Lotus Bliss surroundings" },
+                  { image: lb8, altTag: "Lotus Bliss garden" },
+                  { image: lb9, altTag: "Lotus Bliss amenities" },
+                  { image: lb10, altTag: "Lotus Bliss evening views" }
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -360,13 +374,13 @@ const LotusBliss = () => {
                 </button>
 
                 <div className="flex-1 mx-6 h-[3px] bg-white/30 relative rounded-full overflow-hidden">
-                  <div
-                    className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
-                    style={{
-                      width: `${Math.max(20, 100 / 3)}%`,
-                      left: `${scrollProgress * (2 / 3)}%`,
-                    }}
-                  />
+                    <div
+                      className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
+                      style={{
+                        width: `${Math.max(20, 100 / 10)}%`,
+                        left: `${scrollProgress * (9 / 10)}%`,
+                      }}
+                    />
                 </div>
 
                 <button
