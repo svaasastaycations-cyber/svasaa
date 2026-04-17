@@ -208,21 +208,94 @@ const LotusBliss = () => {
             </div>
           </section>
 
-          {/* 5. Experience the Vibe Section */}
-          <section className="py-10 border-b border-white/10 text-center">
-            <h2 className="text-3xl md:text-5xl font-header font-black text-svaasa-brand mb-16 tracking-tight">
-              Experience the Vibe
-            </h2>
-            <div className="aspect-video w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/nfQFUOH6L_o"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          {/* 5. Gallery Section */}
+          <section className="py-20 text-center border-b border-white/10">
+            <div className="flex flex-col items-center mb-16">
+              <h2 className="text-4xl md:text-6xl font-header font-black text-svaasa-brand tracking-tight mb-8">
+                Gallery
+              </h2>
+              <button
+                onClick={() => navigate("/gallery")}
+                className="group flex items-center space-x-3 text-white/60 border-b border-white/10 pb-2 hover:border-white hover:text-white transition-all duration-300"
+              >
+                <span className="text-sm font-header font-black tracking-widest uppercase">
+                  View All Photos
+                </span>
+                <span className="text-xl transform group-hover:translate-x-2 transition-transform duration-300">
+                  →
+                </span>
+              </button>
+            </div>
+
+            <div className="relative group/gallery max-w-6xl mx-auto">
+              <button
+                onClick={() => scroll("left")}
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-white opacity-0 md:group-hover/gallery:opacity-100 transition-all hover:bg-svaasa-brand hover:text-black hover:scale-110 active:scale-95"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button
+                onClick={() => scroll("right")}
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-white opacity-0 md:group-hover/gallery:opacity-100 transition-all hover:bg-svaasa-brand hover:text-black hover:scale-110 active:scale-95"
+              >
+                <ChevronRight size={24} />
+              </button>
+
+              <div
+                ref={scrollContainerRef}
+                onScroll={handleScroll}
+                className="flex overflow-x-scroll pb-4 gap-6 scrollbar-hide snap-x snap-mandatory"
+              >
+                {[
+                  { image: lb1, altTag: "Aerial view of Lotus Bliss farm house Hyderabad with swimming pool" },
+                  { image: lb2, altTag: "Luxury farmhouse in Hyderabad with pool and garden view" },
+                  { image: lb3, altTag: "Farmhouse with swimming pool for rent in Hyderabad" },
+                  { image: lb4, altTag: "Lotus Bliss farmhouse exteriors" },
+                  { image: lb5, altTag: "Lotus Bliss farmhouse interiors" },
+                  { image: lb6, altTag: "Lotus Bliss luxury rooms" },
+                  { image: lb7, altTag: "Lotus Bliss surroundings" },
+                  { image: lb8, altTag: "Lotus Bliss garden" },
+                  { image: lb9, altTag: "Lotus Bliss amenities" },
+                  { image: lb10, altTag: "Lotus Bliss evening views" }
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="min-w-[85vw] md:min-w-[500px] aspect-[4/3] overflow-hidden rounded-[2rem] snap-center border border-white/10 shadow-2xl"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.altTag}
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 flex items-center justify-between max-w-[300px] mx-auto px-4">
+                <button
+                  onClick={() => scroll("left")}
+                  className="p-2 text-white/20 hover:text-svaasa-brand transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <div className="flex-1 mx-6 h-[3px] bg-white/30 relative rounded-full overflow-hidden">
+                  <div
+                    className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
+                    style={{
+                      width: `${Math.max(20, 100 / 10)}%`,
+                      left: `${scrollProgress * (9 / 10)}%`,
+                    }}
+                  />
+                </div>
+                <button
+                  onClick={() => scroll("right")}
+                  className="p-2 text-white/20 hover:text-svaasa-brand transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </div>
             </div>
           </section>
 
@@ -299,98 +372,21 @@ const LotusBliss = () => {
             </p>
           </section>
 
-          {/* 7. Gallery Section */}
-          <section className="py-20 text-center border-b border-white/10">
-            <div className="flex flex-col items-center mb-16">
-              <h2 className="text-4xl md:text-6xl font-header font-black text-svaasa-brand tracking-tight mb-8">
-                Gallery
-              </h2>
-              <button
-                onClick={() => navigate("/gallery")}
-                className="group flex items-center space-x-3 text-white/60 border-b border-white/10 pb-2 hover:border-white hover:text-white transition-all duration-300"
-              >
-                <span className="text-sm font-header font-black tracking-widest uppercase">
-                  View All Photos
-                </span>
-                <span className="text-xl transform group-hover:translate-x-2 transition-transform duration-300">
-                  →
-                </span>
-              </button>
-            </div>
-
-            <div className="relative group/gallery max-w-6xl mx-auto">
-              {/* Navigation Arrows */}
-              <button
-                onClick={() => scroll("left")}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-white opacity-0 md:group-hover/gallery:opacity-100 transition-all hover:bg-svaasa-brand hover:text-black hover:scale-110 active:scale-95"
-              >
-                <ChevronLeft size={24} />
-              </button>
-              <button
-                onClick={() => scroll("right")}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-white opacity-0 md:group-hover/gallery:opacity-100 transition-all hover:bg-svaasa-brand hover:text-black hover:scale-110 active:scale-95"
-              >
-                <ChevronRight size={24} />
-              </button>
-
-              <div
-                ref={scrollContainerRef}
-                onScroll={handleScroll}
-                className="flex overflow-x-scroll pb-4 gap-6 scrollbar-hide snap-x snap-mandatory"
-              >
-                {[
-                  { image: lb1, altTag: "Aerial view of Lotus Bliss farm house Hyderabad with swimming pool" },
-                  { image: lb2, altTag: "Luxury farmhouse in Hyderabad with pool and garden view" },
-                  { image: lb3, altTag: "Farmhouse with swimming pool for rent in Hyderabad" },
-                  { image: lb4, altTag: "Lotus Bliss farmhouse exteriors" },
-                  { image: lb5, altTag: "Lotus Bliss farmhouse interiors" },
-                  { image: lb6, altTag: "Lotus Bliss luxury rooms" },
-                  { image: lb7, altTag: "Lotus Bliss surroundings" },
-                  { image: lb8, altTag: "Lotus Bliss garden" },
-                  { image: lb9, altTag: "Lotus Bliss amenities" },
-                  { image: lb10, altTag: "Lotus Bliss evening views" }
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="min-w-[85vw] md:min-w-[500px] aspect-[4/3] overflow-hidden rounded-[2rem] snap-center border border-white/10 shadow-2xl"
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.altTag}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-1000"
-                    />
-                  </div>
-                ))}
-              </div>
-
-              {/* Mobile/Bottom Navigation Arrows & Progress Bar */}
-              <div className="mt-4 flex items-center justify-between max-w-[300px] mx-auto px-4">
-                <button
-                  onClick={() => scroll("left")}
-                  className="p-2 text-white/20 hover:text-svaasa-brand transition-colors"
-                  aria-label="Previous image"
-                >
-                  <ChevronLeft size={24} />
-                </button>
-
-                <div className="flex-1 mx-6 h-[3px] bg-white/30 relative rounded-full overflow-hidden">
-                    <div
-                      className="absolute left-0 top-0 h-full bg-svaasa-brand transition-all duration-300 ease-out"
-                      style={{
-                        width: `${Math.max(20, 100 / 10)}%`,
-                        left: `${scrollProgress * (9 / 10)}%`,
-                      }}
-                    />
-                </div>
-
-                <button
-                  onClick={() => scroll("right")}
-                  className="p-2 text-white/20 hover:text-svaasa-brand transition-colors"
-                  aria-label="Next image"
-                >
-                  <ChevronRight size={24} />
-                </button>
-              </div>
+          {/* 7. Experience the Vibe Section */}
+          <section className="py-10 border-b border-white/10 text-center">
+            <h2 className="text-3xl md:text-5xl font-header font-black text-svaasa-brand mb-16 tracking-tight">
+              Experience the Vibe
+            </h2>
+            <div className="aspect-video w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/nfQFUOH6L_o"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </section>
 
