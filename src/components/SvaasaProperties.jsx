@@ -85,16 +85,6 @@ const SvaasaProperties = () => {
                     Explore Farmstay
                     <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-2 transition-transform" />
                   </div>
-                  <button 
-                    onClick={(e) => { 
-                      e.stopPropagation(); 
-                      navigate('/contact'); 
-                    }}
-                    className="flex items-center space-x-2 bg-white/5 hover:bg-svaasa-brand hover:text-black text-white px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 border border-white/10"
-                  >
-                    <MapPin size={14} />
-                    <span>Location</span>
-                  </button>
                 </div>
               </div>
             </div>

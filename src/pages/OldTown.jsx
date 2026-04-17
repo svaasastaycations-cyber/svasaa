@@ -371,7 +371,7 @@ const OldTown = () => {
             <h2 className="text-3xl md:text-5xl font-header font-black text-svaasa-brand mb-16 tracking-tight">
               Experience the Vibe
             </h2>
-            <div className="aspect-video w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
+            <div className="aspect-video w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10 mb-12">
               <iframe
                 width="100%"
                 height="100%"
@@ -382,6 +382,16 @@ const OldTown = () => {
                 allowFullScreen
               ></iframe>
             </div>
+
+            <a
+              href="https://maps.app.goo.gl/4XPzPp4W6kyWMqYWA?g_st=iw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-3 bg-white/5 hover:bg-svaasa-brand hover:text-black text-white px-8 py-4 rounded-full text-lg font-bold tracking-widest uppercase transition-all duration-300 border border-white/10 group"
+            >
+              <MapPin size={24} className="group-hover:scale-110 transition-transform" />
+              <span>View On Google Maps</span>
+            </a>
           </section>
 
           {/* 8. Terms and Conditions at the end */}
