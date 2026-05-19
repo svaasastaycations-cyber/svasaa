@@ -27,11 +27,45 @@ const Navbar = () => {
 
   return (
     <>
-      {/* TOP NAVBAR */}
+      {/* ANNOUNCEMENT BAR */}
+      <div
+        className={`fixed top-0 left-0 w-full z-50 h-8 md:h-10 bg-svaasa-brand text-svaasa-black flex items-center overflow-hidden transition-all duration-500 ${
+          isScrolled ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
+        }`}
+      >
+        <div className="flex w-full select-none overflow-hidden">
+          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full justify-around items-center py-1">
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+          </div>
+          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full justify-around items-center py-1" aria-hidden="true">
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* TOP NAVBAR (Floating Glass Bar) */}
       <nav
-        className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ${isScrolled ? "h-20 md:h-28 bg-svaasa-black/40 backdrop-blur-2xl border-b border-white/10 shadow-2xl" : "h-24 md:h-32 bg-transparent"
-          }`}
+        className={`fixed left-0 w-full z-40 transition-all duration-500 ${
+          isScrolled
+            ? "top-0 h-20 md:h-28 bg-svaasa-black/40 backdrop-blur-2xl border-b border-white/10 shadow-2xl"
+            : "top-8 md:top-10 h-24 md:h-32 bg-transparent"
+        }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between h-full w-full">
 
