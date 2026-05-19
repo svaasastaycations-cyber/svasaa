@@ -34,26 +34,14 @@ const Navbar = () => {
         }`}
       >
         <div className="flex w-full select-none overflow-hidden">
-          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full justify-around items-center py-1">
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
-            </span>
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
-            </span>
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full items-center py-1">
+            <span className="font-header font-bold italic text-xs md:text-sm tracking-wide normal-case flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-header font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
             </span>
           </div>
-          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full justify-around items-center py-1" aria-hidden="true">
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
-            </span>
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
-            </span>
-            <span className="text-[10px] md:text-xs font-black tracking-[0.25em] uppercase flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-sans font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+          <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full items-center py-1" aria-hidden="true">
+            <span className="font-header font-bold italic text-xs md:text-sm tracking-wide normal-case flex items-center gap-2">
+              🎯 Book Now & Save Big — Up To <span className="font-header font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
             </span>
           </div>
         </div>
