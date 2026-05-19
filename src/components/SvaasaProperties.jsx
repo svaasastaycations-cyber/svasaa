@@ -60,6 +60,7 @@ const SvaasaProperties = () => {
                   src={prop.image}
                   alt={prop.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500" />
                 <div className="absolute top-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-svaasa-black transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">

@@ -48,6 +48,7 @@ const IntimateMoments = () => {
                   src={event.image}
                   alt={event.altTag}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[20%] group-hover:grayscale-0"
+                  loading="lazy"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent group-hover:from-white/10 transition-colors duration-500" />
