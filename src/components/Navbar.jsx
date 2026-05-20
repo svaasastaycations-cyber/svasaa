@@ -35,13 +35,13 @@ const Navbar = () => {
       >
         <div className="flex w-full select-none overflow-hidden">
           <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full items-center py-1">
-            <span className="font-header font-bold italic text-xs md:text-sm tracking-wide normal-case flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-header font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            <span className="font-header font-bold italic text-sm md:text-base tracking-wide normal-case inline-block align-middle">
+              🎯 Book Now & Save Big — Upto <span className="font-header font-black text-base md:text-lg tracking-normal">20%</span> Off 💥
             </span>
           </div>
           <div className="animate-marquee flex shrink-0 whitespace-nowrap min-w-full items-center py-1" aria-hidden="true">
-            <span className="font-header font-bold italic text-xs md:text-sm tracking-wide normal-case flex items-center gap-2">
-              🎯 Book Now & Save Big — Up To <span className="font-header font-black text-sm md:text-base tracking-normal mx-0.5 inline-block align-middle">20%</span> Off 💥
+            <span className="font-header font-bold italic text-sm md:text-base tracking-wide normal-case inline-block align-middle">
+              🎯 Book Now & Save Big — Upto <span className="font-header font-black text-base md:text-lg tracking-normal">20%</span> Off 💥
             </span>
           </div>
         </div>
